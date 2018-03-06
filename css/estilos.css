@@ -1,0 +1,70 @@
+body {
+    margin: 0 auto;
+    width: 30%; 
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    line-height: 1.8em;
+}
+
+form {
+    font-size: 16px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    color: #401e4b;
+}
+
+main {
+    border: 2px solid #401e4b;
+    border-left: none;
+    border-right: none;
+    margin: 20px 10px;
+    padding: 20px 0;
+}
+
+footer {
+    text-align: center;
+}
+
+#botao {
+    background-color:#7c3e91; 
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.8em;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1320px) {
+    body {
+        margin: 0 auto;
+        width: 60%; 
+    }
+
+    @media screen and (max-width: 920px) {
+        body {
+            margin: 0 auto;
+            width: 80%; 
+        }
+
+        @media screen and (max-width: 420px) {
+            body {
+                margin: 0 auto;
+                width: 100%; 
+            }
+        }
+    }
+}
