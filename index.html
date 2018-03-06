@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <title>Formulário interativo com HTML5</title>
+    </head>
+    <body>
+        <header>
+            <h1>Formulário interativo com HTML5</h1>
+        </header>
+        <main>
+            <form oninput="total.value=(noites.valueAsNumber*85)">
+
+                <label>Nome completo: </label>
+                <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Marlene Mattos" required>
+
+                <br><br>
+
+                <label>Email: </label>
+                <input type="email" id="email" name="email" required>
+
+                <br><br>
+
+                <label>Telefone: </label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <br><br>
+
+                <label>Data de chegada: </label>
+                <input type="date" id="dataChegada" name="dataChegada" required>
+
+                <br><br>
+
+                <label>Número de noites (o valor do quarto por noite é de R$85,00): </label>
+                <input type="number" id="noites" name="noites" value="1" min="1" max="30" required>
+                
+                <br><br>
+
+                <label>Total estimado: </label>
+                R$<output id="total" name="total">85</output>,00
+
+                <br><br>
+
+                <label>Código promocional: </label>
+                <input type="text" id="code" name="code" pattern="[A-Za-z0-9{6}" title="O código promocional consiste de 6 caracteres alfanuméricos">
+
+                <input type="submit" id="botao" value="Solicitar Reserva" />
+            </form>
+        </main>
+        <footer>
+            <p>Desenvolvido por Higor Rocha - 2018</p>
+        </footer>
+    </body>
+</html>
